@@ -19,7 +19,7 @@ var work = {
 		"employer": "Freelancer",
 		"title": "Developer",
 		"location": "New York, NY",
-		"dates": "2014-present",
+		"dates": "2014- Current",
 		"description": "Developer with iOS, front end and full stack."
 	},
 	{
