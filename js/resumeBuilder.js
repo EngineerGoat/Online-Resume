@@ -2,15 +2,15 @@ var bio = {
 	"name": "Deborah E. Padilla",
 	"role": "Front-End Web Developer",
 	"contact": {
-		"mobile": "201-749-6963",
-		"email": "deborahelizabethpadilla@gmail.com",
-		"github": "deborahepadilla",
-		"twitter": "@deborahepadilla",
-		"location": "New York, NY"
+		"Mobile": "201-749-6963",
+		"Email": "deborahelizabethpadilla@gmail.com",
+		"GitHub": "deborahepadilla",
+		"Twitter": "@deborahepadilla",
+		"Location": "New York, NY"
 	},
 	"biopic": "images/bio.jpg",
 	"welcomeMsg": "I am a self-taught web developer with extensive experience in humanities.",
-	"skills": ["HTML", "CSS", "Javascript", "jQuery", "Python", "Brackets", "Bootstrap", "Google Chrome"]
+	"skills": ["HTML", "CSS", "Javascript", "jQuery", "Python", "Brackets", "Bootstrap", "Google Chrome", "iOS", "Swift", "CocoaPods", "Xcode", "Git", "GitHub"]
 };
 
 var work = {
