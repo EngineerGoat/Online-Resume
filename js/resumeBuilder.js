@@ -10,7 +10,7 @@ var bio = {
 	},
 	"biopic": "images/bio.jpg",
 	"welcomeMsg": "I am a self-taught web developer with extensive experience in humanities.",
-	"skills": ["HTML", "CSS", "Javascript", "jQuery", "Python", "Brackets", "Bootstrap", "Google Chrome", "iOS", "Swift", "CocoaPods", "Xcode", "Git", "GitHub"]
+	"skills": ["HTML", "CSS", "Javascript", "jQuery", "Python", "Brackets", "Bootstrap", "Google Chrome"]
 };
 
 var work = {
