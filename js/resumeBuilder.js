@@ -47,9 +47,9 @@ var projects = {
 		"images": ['']
 	},
 	{
-		"title": "Test",
+		"title": "Animal Trading Cards",
 		"dates": "2017",
-		"description": "Used functions in Python to generate HTML.",
+		"description": "Utilized HTML and CSS",
 		"images": ['']
 	}
 	]
