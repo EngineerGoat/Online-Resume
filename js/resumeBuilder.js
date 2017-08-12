@@ -2,32 +2,32 @@ var bio = {
 	"name": "Deborah E. Padilla",
 	"role": "Front-End Web Developer",
 	"contact": {
-		"Mobile": "201-749-6963",
-		"Email": "deborahelizabethpadilla@gmail.com",
-		"GitHub": "deborahepadilla",
-		"Twitter": "@deborahepadilla",
-		"Location": "New York, NY"
+		"mobile": "201-749-6963",
+		"email": "deborahelizabethpadilla@gmail.com",
+		"github": "deborahepadilla",
+		"twitter": "@deborahepadilla",
+		"location": "New York, NY"
 	},
 	"biopic": "images/bio.jpg",
-	"welcomeMsg": "I am a self-taught web developer with extensive experience in humanities.",
-	"skills": ["HTML", "CSS", "Javascript", "jQuery", "Python", "Brackets", "Bootstrap", "Google Chrome"]
+	"welcomeMsg": "I am a self-taught Web Developer.",
+	"skills": ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Brackets", "Google Chrome"]
 };
 
 var work = {
 	"jobs": [
 	{
 		"employer": "Freelancer",
-		"title": "Developer",
+		"title": "Equipment Design Engineer",
 		"location": "New York, NY",
-		"dates": "2014- Current",
-		"description": "Developer with iOS, front end and full stack."
+		"dates": "2014-Current",
+		"description": "Developer"
 	},
 	{
 		"employer": "Freelancer",
 		"title": "Child Care Provider",
 		"location": "Mahwah, NJ",
 		"dates": "2003-2013",
-		"description": "Managed up to 20 children of different abilties, practiced in commercial and in home environments, cared for special needs."
+		"description": "Managed children of all ages and abilities."
 	}
 	]
 };
@@ -35,21 +35,21 @@ var work = {
 var projects = {
 	"projects": [
 	{
-		"title": "Online Resume",
+		"title": "Portfolio",
 		"dates": "2017",
-		"description": "Built a Python back end using Google App Engine, Jinja2 HTML templates, and a database to host a web page online and allow user comments.",
-		"images": ['']
-	},
-	{
-		"title": "Portfolio Website",
-		"dates": "2017",
-		"description": "Created a movie website with images and trailers, this project demonstrates knowledge of Object Oriented Programming.",
+		"description": "Created a website in HTML and CSS.",
 		"images": ['']
 	},
 	{
 		"title": "Animal Trading Cards",
 		"dates": "2017",
-		"description": "Utilized HTML and CSS",
+		"description": "Created a website in HTML.",
+		"images": ['']
+	},
+	{
+		"title": "Online Resume",
+		"dates": "2017",
+		"description": "Created a website in HTML, CSS, JavaScript, etc.",
 		"images": ['']
 	}
 	]
@@ -60,15 +60,15 @@ var education = {
 	{
 		"name": "Udacity",
 		"location": "Online",
-		"degree": "iOS Development",
-		"majors": ["iOS Development"],
+		"degree": "iOS Developer Nanodegree",
+		"majors": ["iOS"],
 		"years": "2017",
 		"url": "www.udacity.com"
 	},
 	{
-		"name": "Udacity",
+		"name": "Uadacity",
 		"location": "Online",
-		"degree": "Front-End Nanodegree",
+		"degree": "Associate of Science",
 		"majors": ["Front End Web Development"],
 		"years": "Current",
 		"url": "www.udacity.com"
@@ -82,9 +82,9 @@ var education = {
 		"url": "www.udemy.com"
 	},
 	{
-		"title": "Full Stack & Front End Web Development",
+		"title": "Front End and iOS",
 		"school": "Udemy",
-		"date": "2015-2016",
+		"date": "2016",
 		"url": "www.udemy.com"
 	}
 	]
