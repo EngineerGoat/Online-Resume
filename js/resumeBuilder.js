@@ -133,10 +133,10 @@ bio.display = function() {
 	$("#footerContacts").append(HTMLlocation.replace("%data%", bio.contact.location));
 	
 	$(".welcome-message").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg));
-}
+};
 
 work.display = function() {
-	for (job in work.jobs) {
+	for (var job in work.jobs) {
 		$('#workExperience').append(HTMLworkStart);
 
 		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
@@ -155,7 +155,7 @@ work.display = function() {
 };
 
 projects.display = function() {
-	for (project in projects.projects) {
+	for (var project in projects.projects) {
 		$("#projects").append(HTMLprojectStart);
 
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
@@ -168,18 +168,18 @@ projects.display = function() {
 		$(".project-entry:last").append(formattedDescription);
 
 		if (projects.projects[project].images.length > 0) {
-			for (image in projects.projects[project].images) {
+			for (var image in projects.projects[project].images) {
 				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
 				$(".project-entry:last").append(formattedImage);
 			}
 		}
 	}
-}
+};
 
 education.display = function() {
 
 	$("#education").append(HTMLschoolStart);
-	for (school in education.schools){
+	for (var school in education.schools){
 		$(".education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name));
 		$(".education-entry").append(HTMLschoolDegree.replace("%data%", education.schools[school].degree));
 		$(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].years));
@@ -190,13 +190,13 @@ education.display = function() {
 
 	$(".education-entry").append(HTMLonlineClasses);
 
-	for (onlineClass in education.onlineCourses){
+	for (var onlineClass in education.onlineCourses){
 		$(".education-entry").append(HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineClass].title));
 		$(".education-entry").append(HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineClass].school));
 		$(".education-entry").append(HTMLonlineDates.replace("%data%", education.onlineCourses[onlineClass].date));
 		$(".education-entry").append(HTMLonlineURL.replace("%data%", education.onlineCourses[onlineClass].url));
 	}
-}
+};
 
 bio.display();
 work.display();
