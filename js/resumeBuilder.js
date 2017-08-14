@@ -136,7 +136,8 @@ bio.display = function() {
 };
 
 work.display = function() {
-	for (var job in work.jobs) {
+    for (var i = 0; i < work.jobs.length; i++) { 
+    var job = jobs.jobs[i];) {
 		$('#workExperience').append(HTMLworkStart);
 
 		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
@@ -192,7 +193,8 @@ education.display = function() {
 
 	$(".education-entry").append(HTMLonlineClasses);
 
-	for (var onlineClass in education.onlineCourses){
+	for (var i = 0; i < onlineClass.onlineCourses.length; i++) { 
+    var onlineClass = projects.projects[i];) {
 		$(".education-entry").append(HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineClass].title));
 		$(".education-entry").append(HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineClass].school));
 		$(".education-entry").append(HTMLonlineDates.replace("%data%", education.onlineCourses[onlineClass].date));
