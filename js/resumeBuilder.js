@@ -136,7 +136,7 @@ bio.display = function() {
 };
 
 work.display = function() {
-    for (var i = 0; i < work.jobs.length; i++) { 
+	for (var job in work.jobs) {
     var job = jobs.jobs[i];) {
 		$('#workExperience').append(HTMLworkStart);
 
@@ -156,8 +156,7 @@ work.display = function() {
 };
 
 projects.display = function() {
-	for (var i = 0; i < projects.projects.length; i++) { 
-    var project = projects.projects[i];) {
+	for (var project in projects.projects) {
 		$("#projects").append(HTMLprojectStart);
 
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
@@ -181,7 +180,7 @@ projects.display = function() {
 education.display = function() {
 
 	$("#education").append(HTMLschoolStart);
-	for (var i = 0; i < education.education.length; i++) { 
+	for (var school in education.schools){ 
     var education = education.education[i];) {
 		$(".education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name));
 		$(".education-entry").append(HTMLschoolDegree.replace("%data%", education.schools[school].degree));
