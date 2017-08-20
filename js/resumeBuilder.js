@@ -62,11 +62,11 @@ var education = {
 		"location": "Online",
 		"degree": "iOS Developer Nanodegree",
 		"majors": ["iOS"],
-		"dates": "2017",
+		"years": "2017",
 		"url": "www.udacity.com"
 	},
 	{
-		"name": "Udacity",
+		"name": "Uadacity",
 		"location": "Online",
 		"degree": "Associate of Science",
 		"majors": ["Front End Web Development"],
@@ -78,7 +78,7 @@ var education = {
 	{
 		"title": "iOS Development",
 		"school": "Udemy",
-		"dates": "2014",
+		"date": "2014",
 		"url": "www.udemy.com"
 	},
 	{
@@ -137,7 +137,6 @@ bio.display = function() {
 
 work.display = function() {
 	for (var job in work.jobs) {
-    var job = jobs.jobs[i];) {
 		$('#workExperience').append(HTMLworkStart);
 
 		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
@@ -180,8 +179,7 @@ projects.display = function() {
 education.display = function() {
 
 	$("#education").append(HTMLschoolStart);
-	for (var school in education.schools){ 
-    var education = education.education[i];) {
+	for (var school in education.schools){
 		$(".education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name));
 		$(".education-entry").append(HTMLschoolDegree.replace("%data%", education.schools[school].degree));
 		$(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].years));
@@ -192,8 +190,7 @@ education.display = function() {
 
 	$(".education-entry").append(HTMLonlineClasses);
 
-	for (var i = 0; i < onlineClass.onlineCourses.length; i++) { 
-    var onlineClass = projects.projects[i];) {
+	for (var onlineClass in education.onlineCourses){
 		$(".education-entry").append(HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineClass].title));
 		$(".education-entry").append(HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineClass].school));
 		$(".education-entry").append(HTMLonlineDates.replace("%data%", education.onlineCourses[onlineClass].date));
