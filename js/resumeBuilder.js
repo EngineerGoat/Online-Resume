@@ -62,7 +62,7 @@ var education = {
 		"location": "Online",
 		"degree": "iOS Developer Nanodegree",
 		"majors": ["iOS"],
-		"years": "2017",
+		"dates": "2017",
 		"url": "www.udacity.com"
 	},
 	{
@@ -70,7 +70,7 @@ var education = {
 		"location": "Online",
 		"degree": "Associate of Science",
 		"majors": ["Front End Web Development"],
-		"years": "Current",
+		"dates": "Current",
 		"url": "www.udacity.com"
 	}
 	],
@@ -78,13 +78,13 @@ var education = {
 	{
 		"title": "iOS Development",
 		"school": "Udemy",
-		"date": "2014",
+		"dates": "2014",
 		"url": "www.udemy.com"
 	},
 	{
 		"title": "Front End and iOS",
 		"school": "Udemy",
-		"date": "2016",
+		"dates": "2016",
 		"url": "www.udemy.com"
 	}
 	]
