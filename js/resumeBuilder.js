@@ -136,7 +136,7 @@ bio.display = function() {
 };
 
 work.display = function() {
-	for (var job = 0; job < work.jobs; job++) {
+	for (var job = 0; job < work.jobs.length; job++) {
 		$('#workExperience').append(HTMLworkStart);
 
 		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
@@ -155,7 +155,7 @@ work.display = function() {
 };
 
 projects.display = function() {
-	for (var project = 0; project < projects.projects; project++) {
+	for (var project = 0; project < projects.projects.length; project++) {
 		$("#projects").append(HTMLprojectStart);
 
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
@@ -182,7 +182,7 @@ education.display = function() {
 	for (var school = 0; school < education.schools; school++){
 		$(".education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name));
 		$(".education-entry").append(HTMLschoolDegree.replace("%data%", education.schools[school].degree));
-		$(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].years));
+		$(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].dates));
 		$(".education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].location));
 		$(".education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].majors));
 		
@@ -193,7 +193,7 @@ education.display = function() {
 	for (var onlineClass = 0; onlineClass < education.onlineCourses; onlineClass++){
 		$(".education-entry").append(HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineClass].title));
 		$(".education-entry").append(HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineClass].school));
-		$(".education-entry").append(HTMLonlineDates.replace("%data%", education.onlineCourses[onlineClass].date));
+		$(".education-entry").append(HTMLonlineDates.replace("%data%", education.onlineCourses[onlineClass].dates));
 		$(".education-entry").append(HTMLonlineURL.replace("%data%", education.onlineCourses[onlineClass].url));
 	}
 };
