@@ -182,6 +182,7 @@ education.display = function() {
 	for (var school = 0; school < education.schools; school++){
 		$(".education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name));
 		$(".education-entry").append(HTMLschoolDegree.replace("%data%", education.schools[school].degree));
+		$(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].years));
 		$(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].dates));
 		$(".education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].location));
 		$(".education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].majors));
