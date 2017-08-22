@@ -185,6 +185,7 @@ education.display = function() {
 		$(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].years));
 		$(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].dates));
 		$(".education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].location));
+		$(".education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].majors));
 		$(".education-entry:last").append(HTMLschoolMajor.replace("%data%", education.schools[school].majors));
 		
 	}
