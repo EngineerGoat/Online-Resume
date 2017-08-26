@@ -1,7 +1,7 @@
 var bio = {
     "name": "Deborah E. Padilla",
     "role": "Front-End Web Developer",
-    "contact": {
+    "contacts": {
         "mobile": "201-749-6963",
         "email": "deborahelizabethpadilla@gmail.com",
         "github": "deborahepadilla",
@@ -9,7 +9,7 @@ var bio = {
         "location": "New York, NY"
     },
     "biopic": "images/bio.jpg",
-    "welcomeMsg": "I am a self-taught Web Developer.",
+    "welcomeMessage": "I am a self-taught Web Developer.",
     "skills": ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Brackets", "Google Chrome"]
 };
 
