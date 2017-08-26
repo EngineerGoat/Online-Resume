@@ -9,7 +9,7 @@ var bio = {
         "location": "New York, NY"
     },
     "biopic": "images/bio.jpg",
-    "welcomeMessage": "I am a self-taught Web Developer.",
+    "welcomeM": "I am a self-taught Web Developer.",
     "skills": ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Brackets", "Google Chrome"]
 };
 
@@ -164,6 +164,7 @@ projects.display = function() {
 
         if (projects.projects[project].images.length > 0) {
             image < projects.projects[project].images.length {
+            for (var image = 0; < projects.projects.length; ++images) {
                 var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
                 $(".project-entry:last").append(formattedImage);
             }
