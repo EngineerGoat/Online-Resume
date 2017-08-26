@@ -163,7 +163,7 @@ projects.display = function() {
         $(".project-entry:last").append(formattedDescription);
 
         if (projects.projects[project].images.length > 0) {
-            for (var image = 0; < projects.projects.length; ++images) {
+            for (var image in projets.project[project].images {
                 var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
                 $(".project-entry:last").append(formattedImage);
             }
