@@ -9,7 +9,7 @@ var bio = {
 		"location": "New York, NY"
 	},
 	"biopic": "images/bio.jpg",
-	"welcomeMsg": "I am a self-taught Web Developer.",
+	"welcomeMessage": "I am a self-taught Web Developer.",
 	"skills": ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Brackets", "Google Chrome"]
 };
 
@@ -132,7 +132,7 @@ bio.display = function() {
 
 	$("#footerContacts").append(HTMLlocation.replace("%data%", bio.contact.location));
 	
-	$(".welcome-message").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg));
+	$(".welcome-message").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
 };
 
 work.display = function() {
