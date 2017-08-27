@@ -128,9 +128,9 @@ bio.display = function() {
 
 	$("#footerContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
 
-	$("#footerContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
+	$("#footerContacts").append(HTMLgithub.replace("%data%", bio.contact.github));
 
-	$("#footerContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
+	$("#footerContacts").append(HTMLlocation.replace("%data%", bio.contact.location));
 	
 	$(".welcome-message").append(HTMLwelcomeMessage.replace("%data%", bio.welcomeMessage));
 };
@@ -168,7 +168,7 @@ projects.display = function() {
 		$(".project-entry:last").append(formattedDescription);
 
 		if (projects.projects[project].images.length > 0) {
-			for (var image in projects.projects[project].images) {
+			for (var image = 0; image < projects.projects.length; images++) {
 				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
 				$(".project-entry:last").append(formattedImage);
 			}
