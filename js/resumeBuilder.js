@@ -168,10 +168,10 @@ projects.display = function() {
 		$(".project-entry:last").append(formattedDescription);
 
 		if (projects.projects[project].images.length > 0) {
-			for (var image in projects.projects[project].images) {
-				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+			projects.projects[project].images.forEach(function(img){
+				var formattedImage = HTMLprojectImage.replace("%data%", img);
 				$(".project-entry:last").append(formattedImage);
-			}
+			});
 		}
 	}
 };
