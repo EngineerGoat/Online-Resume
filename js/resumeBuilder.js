@@ -1,7 +1,7 @@
 var bio = {
 	"name": "Deborah E. Padilla",
 	"role": "Front-End Web Developer",
-	"contact": {
+	"contacts": {
 		"mobile": "201-749-6963",
 		"email": "deborahelizabethpadilla@gmail.com",
 		"github": "deborahepadilla",
@@ -96,15 +96,15 @@ bio.display = function() {
 
 	$("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
 
-	$("#topContacts").append(HTMLmobile.replace("%data%", bio.contact.mobile));
+	$("#topContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
 
-	$("#topContacts").append(HTMLemail.replace("%data%", bio.contact.email));
+	$("#topContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
 
-	$("#topContacts").append(HTMLtwitter.replace("%data%", bio.contact.twitter));
+	$("#topContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
 
-	$("#topContacts").append(HTMLgithub.replace("%data%", bio.contact.github));
+	$("#topContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
 
-	$("#topContacts").append(HTMLlocation.replace("%data%", bio.contact.location));
+	$("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
 
 	$("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
 
@@ -122,15 +122,15 @@ bio.display = function() {
 		$('#skills').append(formattedSkill); */
 	}
 	
-	$("#footerContacts").append(HTMLmobile.replace("%data%", bio.contact.mobile));
+	$("#footerContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
 
-	$("#footerContacts").append(HTMLemail.replace("%data%", bio.contact.email));
+	$("#footerContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
 
-	$("#footerContacts").append(HTMLtwitter.replace("%data%", bio.contact.twitter));
+	$("#footerContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
 
-	$("#footerContacts").append(HTMLgithub.replace("%data%", bio.contact.github));
+	$("#footerContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
 
-	$("#footerContacts").append(HTMLlocation.replace("%data%", bio.contact.location));
+	$("#footerContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
 	
 	$(".welcome-message").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
 };
