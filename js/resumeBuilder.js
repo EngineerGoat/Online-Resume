@@ -155,27 +155,19 @@ work.display = function() {
 };
 
 projects.display = function() {
-	if(projects.projects.length > 0) {
-		for (i in projects.projects) {
-			$("#projects").append(HTMLprojectStart);
-
-			var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title).replace("#", projects.projects[i].url);
-			var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].datesWorked);
-			var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
-
-			$(".project-entry:last").append(formattedProjectTitle);
-			$(".project-entry:last").append(formattedProjectDates);
-			$(".project-entry:last").append(formattedProjectDescription);
-
-			for (img in projects.projects[i].images) {
-				var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[img]);
-				$(".project-entry:last").append(formattedProjectImage);
-			}
-			
-
-		}
-	}
+    projects.projects.forEach(function(proj) {
+        $("#projects").append(HTMLprojectStart);
+        $(".project-entry:last").append(HTMLprojectTitle.replace("%data%", proj.title));
+        $(".project-entry:last").append(HTMLprojectDates.replace("%data%", proj.dates));
+        $(".project-entry:last").append(HTMLprojectDescription.replace("%data%", proj.description));
+        proj.images.forEach(function(pic) {
+            $(".project-entry:last").append(HTMLprojectImage.replace("%data%", pic));
+        });
+    });
 };
+
+projects.display();
+
 
 education.display = function() {
 
